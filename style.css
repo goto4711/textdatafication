@@ -1,0 +1,97 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top */
+    min-height: 100vh;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding-top: 20px; /* Add some padding at the top */
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#documents textarea, #stopwords-container textarea {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    font-size: 1em;
+    resize: vertical;
+}
+
+#stopwords-container {
+    margin-top: 20px;
+}
+
+#processBtn {
+    display: block;
+    margin: 20px auto;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+#processBtn:hover {
+    background-color: #0056b3;
+}
+
+.vocabulary {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+.table-container {
+    overflow-x: auto; /* For smaller screens */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+}
+
+.positive {
+    background-color: #d4edda; /* Light green */
+    color: #155724;
+    font-weight: bold;
+}
+
+.zero {
+    background-color: #f8d7da; /* Light red */
+    color: #721c24;
+}

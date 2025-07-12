@@ -19,9 +19,17 @@
             <h3>Stopwords (comma-separated):</h3>
             <textarea id="stopwords">the,a,is,in,it,of,for,with,over</textarea>
         </div>
-        <button id="processBtn">Process Documents</button>
+        <div class="buttons-container">
+            <button id="processBtn">Process with Term Frequencies</button>
+            <button id="processEmbeddingsBtn">Process with Term Embeddings</button>
+        </div>
         <div id="output"></div>
+        <div id="embeddings-output"></div>
+        <div id="3d-visualization"></div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+    <script src="https://unpkg.com/three@0.139.2/build/three.js"></script>
+    <script src="https://unpkg.com/three@0.139.2/examples/js/controls/OrbitControls.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

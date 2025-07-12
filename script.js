@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function processDocuments() {
         output.style.display = 'block';
         embeddingsOutput.style.display = 'none';
+        document.getElementById('3d-visualization').innerHTML = ''; // Clear 3D visualization
 
         const documents = [doc1.value, doc2.value, doc3.value];
         const stopwords = stopwordsInput.value.toLowerCase().split(',').map(word => word.trim());
